@@ -1,4 +1,7 @@
 https://go.dev/doc/
 https://pkg.go.dev/
+https://devhints.io/go
+
+https://echo.labstack.com/
 
 https://awesome-go.com/
