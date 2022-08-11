@@ -1,0 +1,63 @@
+Frontend
+https://themes.gohugo.io/
+Hugo es el framework más popular para usar Go en el FrontEnd, claro no es que se utilice en FrontEnd específicamente sino que tiene su propio template para generar archivos estáticos (sin BackEnd, solo HTML, CSS y JavaScript).
+
+Backend
+https://echo.labstack.com/
+Echo es el Framework que más he llegado a usar en las Apps en Go que he realizado. Esto porque reúne varias características:
+    - Es minimalista, evitando tener código que no vamos a usar
+    - Fácil de escalar y un excelente rendimiento al momento de compilar
+    - Tiene su sistema de enrutamiento, pudiendo incluso implementar middlewares (proceso de autenticación)
+    - Tiene su propia interfaz para implementar websockets (conexiones en tiempo real)
+    - Puedes usarlo tanto para crear APIs como páginas web completas.
+    - Es uno de los pocos framewords que tiene su propia implementación de JWT (otro tipo de autenticación muy usado en APIs)
+
+Gin-Gonic
+https://gin-gonic.com/
+Es un framework al que fácilmente le puedes agarrar cariño y esto es porque la forma como interactúas para crear Apps es muy intuitiva. De momento no es de los Frameworks que más destaque, pero tampoco se queda atrás. Ideal para tus primeros proyectos de BackEnd con Go.
+
+
+Revel
+https://revel.github.io/
+Revel es uno de los pesos pesados en desarrollo web para Go incluso fue conocido como el django de Go (django es el framework web más popular para Python) pero dejó de recibir actualizaciones por un tiempo significativo y también perdió un poco esa posición.
+
+Gorilla
+https://www.gorillatoolkit.org/
+Gorilla no es un Framework, ellos se definen como con herramientas para web. Pues en gorilla se enfocaron en una cosa hasta hacerla muy bien, estos son los WebSockets. Puedes desarrollar una web completa usando las librerías nativas de Go y con gorilla tienes esos extras que te ahorran implementación. Han hecho tan bien el código que incluso framworks web lo usan en su código sobre todo la parte de websockets.
+
+Buffalo
+https://gobuffalo.io/
+Buffalo es otro de los pesos pesados en frameworks para web con Go. Hoy en día, es uno de los más completos tiene CLI, ORM, manejo de cookies, middlewares, templates para render de HTML, empaquetador con Docker e incluso puedes hacer despliegue a Heroku, Digital Ocean y Azure con el mismo CLI de Buffalo. Junto a otros features adicionales.
+
+Extra
+swaggo
+https://github.com/swaggo/swag
+swaggo es la forma como podemos implementar swagger en nuestro código en Go. De los frameworks que te he compartido acá, es compatible con Gin-Gonic, echo y búffalo. Beego, por su parte, está incluido en su CLI.
+
+Data Science
+Jupyter
+https://jupyter.org/
+Jupyter es una de las principales herramientas que utilizamos los Data Scientists en el día a día ya que nos permite ejecutar código de manera fácil e iterativa pudiendo reciclar variabless en cualquier momento.
+A pesar, que Go es un lenguaje compilado, la comunidad ha creado un intérprete de Go llamado gomacro para ejecutar código sin compilar. Partiendo de ello, crearon también un kernel de Go para usarlo en Jupyter Notebook llamado gophernotes
+https://github.com/cosmos72/gomacro
+https://github.com/gopherdata/gophernotes
+
+Manejo de DataFrames
+En este punto los más populares son: qframe, gota y dataframe-go.
+https://github.com/tobgu/qframe
+https://github.com/go-gota/gota
+https://github.com/rocketlaunchr/dataframe-go
+
+Visualizaciones
+https://github.com/gonum/plot
+gonum/plot: Gonum no solo es el Numpy en Go sino que además tiene su propio código de visualización. En este caso gonum/plot te permite hacer visualizaciones estáticas.
+https://github.com/go-echarts/go-echarts
+go-echarts: Para el caso de gráficos interactivos esta es una de las mejores opciones ya que además de los gráficos puedes crear tu propio dashboard con la misma librería.
+
+Machine Learning
+
+Hay muchas librerías este ámbito, sin embargo, destacaré solo dos:
+https://github.com/sjwhitworth/golearn
+GoLearn: Tiene diferentes modelos, entre ellos lineales, regresiones y clasificación.
+https://github.com/gorgonia/gorgonia
+Gorgonia: Es el más popular cuando requerimos implementar Deep Learning sino que además tiene la opción de implementar CUDA (hacer modelos de Deep Learning usando la tarjeta gráfica Nvidia)
